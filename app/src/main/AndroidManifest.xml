@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.bartlomiejzmuda.Memory_Game">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconround"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconround"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="pl.bartlomiejzmuda.Memory_Game.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pl.bartlomiejzmuda.Memory_Game.SummaryActivity"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName="pl.bartlomiejzmuda.Memory_Game.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.bartlomiejzmuda.Memory_Game.MainActivity" />
+        </activity>
+        <activity
+            android:name="pl.bartlomiejzmuda.Memory_Game.GameActivity"
+            android:label="@string/title_activity_game"
+            android:parentActivityName="pl.bartlomiejzmuda.Memory_Game.MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.bartlomiejzmuda.Memory_Game.MainActivity" />
+        </activity>
+        <activity
+            android:name="pl.bartlomiejzmuda.Memory_Game.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="pl.bartlomiejzmuda.Memory_Game.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.bartlomiejzmuda.Memory_Game.MainActivity" />
+        </activity>
+        <activity
+            android:name="pl.bartlomiejzmuda.Memory_Game.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+</manifest>
